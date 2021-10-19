@@ -19,6 +19,7 @@ Total Restaurants = 130
 
 Top 5 Preferred cuisine by consumers
  
+![image](https://user-images.githubusercontent.com/92777166/137974815-668c1a19-a872-424f-bbb6-96f041e269d4.png)
 
 
 
@@ -31,6 +32,7 @@ And the second-best preferred cuisine is American, but it is preferred by less t
 ## 2) What type of cuisine is preferred most by restaurants?
 Top 5 cuisine preferred by restaurants
  
+![image](https://user-images.githubusercontent.com/92777166/137974849-9eb5e6af-3071-443e-a5a8-8633b7ecabcf.png)
 
 Here we can see Mexican is available only in 28 restaurants out of 130 restaurants, that is just 22% of restaurants (when compared to 70% of consumers prefer Mexican).
 Ok, let’s compare consumers preferred cuisine vs restaurants available 
