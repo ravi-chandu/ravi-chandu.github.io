@@ -16,7 +16,7 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "_posts", title: "home", Icon: Home}
+  - {file: "osts", title: "home", Icon: Home}
   - {file: "Maven_Restaurant.md", Icon: Maveen}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
