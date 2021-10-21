@@ -12,18 +12,18 @@ Here is the simple Survey app – Collects the data from app and stores in Excel
 We can easily record & update the data using Power Apps
 We don’t have to write the data which are collect from people and again update in excel sheet.
 
-Steps
+## Steps
 
-Step: 1
+### Step: 1
 Here is Excel sheet we are using
 We need update all the employee’s personal details
 ![image](https://user-images.githubusercontent.com/92777166/138257563-159638ff-50c7-4508-9246-2bccaab9c00d.png)
  
 
-Step 2
+### Step 2
 We have to save this excel sheet in OneDrive to connect the Power App – to update Automatically 
 
-Step 3
+### Step 3
 Create Canvas app
 For this we can do in different ways
 
@@ -32,7 +32,7 @@ For this we can do in different ways
 
 In my opinion Choosing the data source first then creating app is bit easy.
 
-Step 4
+### Step 4
 Now the app is created with some of our data
 We need to modify the app as per requirements 
  
