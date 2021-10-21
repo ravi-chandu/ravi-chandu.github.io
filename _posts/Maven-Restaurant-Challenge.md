@@ -1,5 +1,5 @@
 --
-title: "Maven Restaurant Challenge"
+title: "2021-10-28-Maven Restaurant Challenge"
 permalink: "/Maven Restaurant Challenge/"
 layout: page
 ---
