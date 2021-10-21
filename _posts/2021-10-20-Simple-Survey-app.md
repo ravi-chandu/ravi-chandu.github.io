@@ -2,7 +2,7 @@
 
 Here is the simple Survey app – Collects the data from app and stores in Excel sheets 
 
-![image](https://user-images.githubusercontent.com/92777166/138312631-98fa19d8-8e3c-47a0-8403-356f2c68bbcb.png)![image](https://user-images.githubusercontent.com/92777166/138313173-33c87e01-0bdb-440a-b359-dfa77834ccb3.png)![image](https://user-images.githubusercontent.com/92777166/138313528-eb376871-e150-4b33-bc7f-ccba94deb885.png)![image](https://user-images.githubusercontent.com/92777166/138314297-8828b1fa-f00c-4ce7-9b70-299256342a91.png)
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTuZnGcCJtwHLjCnwDMH5psCiBBD7RP7r2FjMvjHLCnxddGpvucnPku54HDvzACS59vQV29Pe_Y7oPm/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
 ![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/92777166/138259300-f4de851c-3d02-479a-b218-4b25d3cfae8f.gif)
