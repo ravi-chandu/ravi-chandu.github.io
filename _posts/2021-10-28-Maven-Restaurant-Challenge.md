@@ -8,11 +8,13 @@ linkedinId: 6848045863164555264
 
  ## Maven Restaurant Challenge
  
- {% include linkedin.html id=page.linkedinId %}
+
 
 
 Maven Restaurant Challenge, you will be assuming the role of Lead Analyst at a firm that invests in new restaurant opportunities abroad. After conducting a study to learn about the restaurant market in several Mexican cities, you've been asked to analyse interesting patterns and trends in the data to help understand the market and make investment decisions.
 
+ {% include linkedin.html id=page.linkedinId %}
+ 
 Here are the details 
 Country = Mexico
 Cities under Mexico (4) = Ciudad Victoria, Cuernavaca, Jiutepec, San Luis Potosi
