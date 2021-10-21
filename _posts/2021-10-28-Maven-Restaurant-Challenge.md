@@ -1,6 +1,6 @@
 ---
 title: "Maven Restaurant Challenge"
-permalink: "/Maven Restaurant Challenge/"
+permalink: "/Maven-Restaurant-Challenge/"
 layout: page
 linkedinId: 6848045863164555264
 ---
