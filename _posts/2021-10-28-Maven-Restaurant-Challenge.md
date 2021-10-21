@@ -6,6 +6,9 @@ layout: page
 
 
  ## Maven Restaurant Challenge
+ 
+  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6848045863164555264" height="833" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
 
 Maven Restaurant Challenge, you will be assuming the role of Lead Analyst at a firm that invests in new restaurant opportunities abroad. After conducting a study to learn about the restaurant market in several Mexican cities, you've been asked to analyse interesting patterns and trends in the data to help understand the market and make investment decisions.
 
