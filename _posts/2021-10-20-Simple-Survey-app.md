@@ -43,10 +43,6 @@ After modifying the app, we have to save and share the app with Specifying the p
 
  
 
-`DAX`
-```DAX
-CALCULATE(<expression>[, <filter1> [, <filter2> [, …]]])
-```
 
 
 
@@ -55,12 +51,6 @@ CALCULATE(<expression>[, <filter1> [, <filter2> [, …]]])
 
 
 
-
- 
-Component’s  -
-Date, Name, Gender, Age, Income level, Ethnicity, Interest, Comments
-
-For Gender, Age, Income  level & Ethnicity have dropdown list
  
 
 
