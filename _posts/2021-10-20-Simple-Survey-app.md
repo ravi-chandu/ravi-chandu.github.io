@@ -14,7 +14,7 @@ We don’t have to write the data which are collect from people and again update
 
 ## Steps
 
-### Step: 1
+**Step 1**
 Here is Excel sheet we are using
 We need update all the employee’s personal details
 ![image](https://user-images.githubusercontent.com/92777166/138257563-159638ff-50c7-4508-9246-2bccaab9c00d.png)
