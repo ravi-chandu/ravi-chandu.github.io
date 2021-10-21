@@ -41,7 +41,10 @@ After modifying the app, we have to save and share the app with Specifying the p
  
 
 
-
+```DAX
+DAX
+CALCULATE(<expression>[, <filter1> [, <filter2> [, …]]])
+```
 
 
 
