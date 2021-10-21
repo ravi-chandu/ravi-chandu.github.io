@@ -1,8 +1,10 @@
 # Power Apps – Simple Survey app
 
 Here is the simple Survey app – Collects the data from app and stores in Excel sheets 
- 
- ![image](https://user-images.githubusercontent.com/92777166/138257484-a45a3aab-6b68-4844-8481-04355aea5bb5.png)
+
+![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/92777166/138259300-f4de851c-3d02-479a-b218-4b25d3cfae8f.gif)
+
+
 ![image](https://user-images.githubusercontent.com/92777166/138257512-44f76c64-7c10-46eb-bfea-56da67413047.png)
 
 
