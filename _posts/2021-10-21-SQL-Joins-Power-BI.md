@@ -77,5 +77,6 @@ ON specifying the relation between table2 & table3
 
 ## Types of SQL JOINs
 
-## Inner Join
+### JOIN(INNER JOIN)
+
 
