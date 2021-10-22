@@ -112,4 +112,5 @@ Upon the Mexican data
 
 `Analysis not completed at,(some factors to be considered for the conclusion) soon update...`
 
-
+`Linkedin Post`
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6848045863164555264" height="710" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
