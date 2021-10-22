@@ -25,6 +25,7 @@ Here we can see that majority of the consumers preferring Mexican, that is more 
 
 And the second-best preferred cuisine is American, but it is preferred by less than 10% (11) consumers.
 
+<br/>  
  
 ## 2) What type of cuisine is preferred most by restaurants?
 
@@ -85,6 +86,8 @@ If we can add place(city) it is more accurate where we have to invest (city)
 
 Let’s start with the easy one, 
 
+<br/>  
+
 ## In which places(city) the highest no. of consumer-preferred cuisine not available in restaurants?
 
 Top 7 preferred cuisine by consumers on the basis of the city
@@ -95,6 +98,7 @@ Top 7 preferred cuisine by consumers on the basis of the city
 Here we can see top cuisine based on no. of consumer's preferences, which are not there in restaurants are in San Luis Potosi.
 We can easily consider these places to invest by considering other factors
 
+<br/>  
 
 ## Are the existing restaurants sufficient for consumer-preferred cuisine in that specific city?
 
