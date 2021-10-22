@@ -76,6 +76,7 @@ ON specifying the relation between table2 & table3
 ```
 
 ## Types of SQL JOINs
+<br/> 
 
 ### 1) JOIN(INNER JOIN)
 
@@ -97,6 +98,7 @@ SELECT c.id, c.name, t.quantity, t.amount
 
 ![image](https://user-images.githubusercontent.com/92777166/138411157-fea5f79c-a377-491d-9de6-40870cc9d48c.png)
 
+<br/> 
 
 ### 2) Left Join 
 
@@ -117,6 +119,7 @@ SELECT c.id, c.name, t.quantity, t.amount
 
 ![image](https://user-images.githubusercontent.com/92777166/138410861-2a7cee85-62e4-4dc8-8f98-4b997998c192.png)
 
+<br/> 
 
 ### 3) Right Join
 
@@ -136,6 +139,8 @@ SELECT c.id, c.name, t.quantity, t.amount
 **Table we get (output)**
 
 ![image](https://user-images.githubusercontent.com/92777166/138411605-8495b254-d4b0-4e8d-a059-2807b3ef8e0c.png)
+
+<br/> 
 
 ### 4) Full outer Join 
 
