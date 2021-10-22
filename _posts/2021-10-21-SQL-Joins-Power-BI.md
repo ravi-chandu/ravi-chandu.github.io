@@ -39,7 +39,7 @@ Here are the two Tables using to explain SQL JOINs
 ## SQL JOINs
 
 Here are the some basic SQL JOINs presented here ` MYSQL`
-1. [Join(Inner join)](#Types-of-SQL-JOINs)
+1. [Join(Inner join)](#Inner-Join)
 2. Left Join 
 3. Right Join 
 4. Full outer Join 
@@ -77,5 +77,5 @@ ON specifying the relation between table2 & table3
 
 ## Types of SQL JOINs
 
-### Join(Inner join) 
+## Inner Join
 
