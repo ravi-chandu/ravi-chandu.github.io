@@ -44,6 +44,7 @@ Here are the some basic SQL JOINs presented here ` MYSQL`
 3. Right Join 
 4. Full outer Join 
 
+### `Basic Concept of Join`
 
 Join statement helps pull the data from multiple tables.
 
