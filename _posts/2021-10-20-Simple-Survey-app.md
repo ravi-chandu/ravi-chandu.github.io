@@ -11,7 +11,7 @@ categories: media
 Here is the simple Survey app – Collects the data from app and stores in Excel sheets 
 
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTuZnGcCJtwHLjCnwDMH5psCiBBD7RP7r2FjMvjHLCnxddGpvucnPku54HDvzACS59vQV29Pe_Y7oPm/embed?start=true&loop=true&delayms=3000" ></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTuZnGcCJtwHLjCnwDMH5psCiBBD7RP7r2FjMvjHLCnxddGpvucnPku54HDvzACS59vQV29Pe_Y7oPm/embed?start=true&loop=true&delayms=3000" height="315" width="100%" allowfullscreen="" frameborder="0"></iframe>
 
 
 We can easily record & update the data using Power Apps
