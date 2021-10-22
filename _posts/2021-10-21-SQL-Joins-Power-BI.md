@@ -9,7 +9,9 @@ Explaining SQL JOINs with Power BI
 *lets now discuss about SQL JOINs*
 
 Here are the two Tables using to explain SQL JOINs
-`Consumers`
+<br/> 
+
+`   Consumers      `
 | Id	| name	| city |
 | -- | -- | -- |
 | 1	| ramu |	mumbai |
@@ -20,8 +22,9 @@ Here are the two Tables using to explain SQL JOINs
 | 6	|kumar	| chennai |
 | 7 |	nani |	kerala |
 | 8	| vasanth |	hyderabad |
+<br/> 
 
-
+   `Transcation`
 | Id | quantity | amount|
 | --| --| --|
 | 1 | 10 | 900 |
@@ -31,4 +34,47 @@ Here are the two Tables using to explain SQL JOINs
 | 7 | 15 | 1200 |
 | 8 | 6 | 500 |
 | 9 | 3 | 300 |
+
+
+## SQL JOINs
+
+Here are the some basic SQL JOINs presented here ` MYSQL`
+1. [Join(Inner join)](#Join(Inner-join))
+2. Left Join 
+3. Right Join 
+4. Full outer Join 
+
+
+Join statement helps pull the data from multiple tables.
+
+**If we want to pull the data from a table, then what we do?  (Basic query)**
+
+```
+SELECT the column names
+FROM that table
+```
+**Now if we want to pull the data from two tables, then?***
+
+We need to JOIN the tables ON relation among the tables
+
+``` 
+SELECT the columns from both tables (prefix with their table identification)
+FROM table1
+JOIN table2
+ON specifying the relation between the two tables 
+```
+
+If we want to pull the data from 3 or more tables - the process same
+```
+SELECT the columns from both tables (prefix with their table identification)
+FROM table1
+JOIN table2
+ON specifying the relation between table1 & table2
+JOIN tables3
+ON specifying the relation between table2 & table3
+```
+
+## Types of SQL JOINs
+
+### Join(Inner join) 
 
