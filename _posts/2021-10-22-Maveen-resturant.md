@@ -119,4 +119,4 @@ Upon the Mexican data
 <br/>  
 
 `Linkedin Post`
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6848045863164555264" height="710" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6848045863164555264" height="710" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
