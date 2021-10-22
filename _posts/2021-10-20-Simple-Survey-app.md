@@ -1,3 +1,11 @@
+---
+title:  " Power Apps – Simple Survey app"
+mathjax: true
+layout: post
+categories: media
+---
+
+
 # Power Apps – Simple Survey app
 
 Here is the simple Survey app – Collects the data from app and stores in Excel sheets 
