@@ -50,29 +50,29 @@ Join statement helps pull the data from multiple tables.
 
 **If we want to pull the data from a table, then what we do?  (Basic query)**
 
-```
+```sql
 SELECT the column names
-FROM that table
+ FROM that table
 ```
 **Now if we want to pull the data from two tables, then?***
 
 We need to JOIN the tables ON relation among the tables
 
-``` 
+``` sql
 SELECT the columns from both tables (prefix with their table identification)
-FROM table1
-JOIN table2
-ON specifying the relation between the two tables 
+ FROM table1
+  JOIN table2
+   ON specifying the relation between the two tables 
 ```
 
 If we want to pull the data from 3 or more tables - the process same
-```
+```sql
 SELECT the columns from both tables (prefix with their table identification)
-FROM table1
-JOIN table2
-ON specifying the relation between table1 & table2
-JOIN tables3
-ON specifying the relation between table2 & table3
+ FROM table1
+  JOIN table2
+   ON specifying the relation between table1 & table2
+    JOIN tables3
+     ON specifying the relation between table2 & table3
 ```
 
 ## Types of SQL JOINs
