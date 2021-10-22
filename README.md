@@ -6,7 +6,7 @@ layout: page
 
 ## About me
 
-<iframe width= "100%" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYTRjOGNiNzMtYTQzZi00YWExLTk4MjctMmFkYjE1ZDdjYjU4IiwidCI6ImU5ZjMyNWZkLTkzMjYtNDJjNi1iNGNjLTBlZmJhNWQ4OTE3OCJ9&pageName=ReportSection9ad64b1de59dc31ba9f3" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width= "100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiYTRjOGNiNzMtYTQzZi00YWExLTk4MjctMmFkYjE1ZDdjYjU4IiwidCI6ImU5ZjMyNWZkLTkzMjYtNDJjNi1iNGNjLTBlZmJhNWQ4OTE3OCJ9&pageName=ReportSection9ad64b1de59dc31ba9f3" frameborder="0" allowFullScreen="true"></iframe>
 
 My self Ravi Chandu
 
