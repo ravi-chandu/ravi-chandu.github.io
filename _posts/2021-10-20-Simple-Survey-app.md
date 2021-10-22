@@ -6,13 +6,16 @@ categories: media
 ---
 
 
-# Power Apps – Simple Survey app
+
 
 Here is the simple Survey app – Collects the data from app and stores in Excel sheets 
 
 <div class="responsive-google-slides">
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTuZnGcCJtwHLjCnwDMH5psCiBBD7RP7r2FjMvjHLCnxddGpvucnPku54HDvzACS59vQV29Pe_Y7oPm/embed?start=true&loop=true&delayms=3000" ></iframe>
 </div>
+
+We can easily record & update the data using Power Apps
+We don’t have to write the data which are collect from people and again update in excel sheet.
 
 ![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/92777166/138259300-f4de851c-3d02-479a-b218-4b25d3cfae8f.gif)
 
@@ -21,8 +24,7 @@ Here is the simple Survey app – Collects the data from app and stores in Excel
 
 
 
-We can easily record & update the data using Power Apps
-We don’t have to write the data which are collect from people and again update in excel sheet.
+
 
 ## Steps
 
