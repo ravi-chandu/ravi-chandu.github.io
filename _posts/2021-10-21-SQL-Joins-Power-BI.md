@@ -11,29 +11,15 @@ Explaining SQL JOINs with Power BI
 Here are the two Tables using to explain SQL JOINs
 <br/> 
 
-`   Consumers      `
-| Id	| name	| city |
-| -- | -- | -- |
-| 1	| ramu |	mumbai |
-|2 |	kalyan |	hyderabad |
-|3	|siri	| hyderabad |
-| 4	| vasavi	| delhi |
-| 5	|rani	| mumbai |
-| 6	|kumar	| chennai |
-| 7 |	nani |	kerala |
-| 8	| vasanth |	hyderabad |
+`   Consumers Table   `
+
+![image](https://user-images.githubusercontent.com/92777166/138413941-56b9e2e1-4d2b-4c78-bf2f-9d5d450a3965.png)
+
 <br/> 
 
-   `Transcation`
-| Id | quantity | amount|
-| --| --| --|
-| 1 | 10 | 900 |
-| 2 | 4 | 350 |
-| 4 | 11 | 950 |
-| 6 | 8 | 700 |
-| 7 | 15 | 1200 |
-| 8 | 6 | 500 |
-| 9 | 3 | 300 |
+   `Transcation Table`
+
+![image](https://user-images.githubusercontent.com/92777166/138414224-f2575842-246f-4f8b-a04d-679c3939adf6.png)
 
 
 ## SQL JOINs
