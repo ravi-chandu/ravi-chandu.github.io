@@ -1,6 +1,6 @@
-title: "Ravi Chandu"
+title: "Ravi Chandu E"
 author: "Ravi Chandu"
-description: "Made with <b style=\"color: #f45;\">&lt;R</b>"
+description: "❤️"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -10,8 +10,9 @@ date_format: "%B %d, %Y"
 
 show_excerpts: true        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
+show_sidebar: true        # show a sidebar instead of the usual header
 minimal: false             # use a dark header
+show_social: true 
 
 # Menu
 
