@@ -6,7 +6,7 @@
 1. [WHERE](#where)
    1. [LIKE](#like)
    2. [IN](#in)
-   3. [AND, BETWEEN, OR](#and,-between,-or)
+   3. [AND, BETWEEN, OR](#and-between-or)
 1. [NOT](#not)
 1. [DERIVED COLUMN](#derived-column)
 
@@ -90,7 +90,7 @@ SELECT markets, customer_names, sales_amount
 
  ---
  
- ## AND, BETWEEN, OR
+ ##  AND, BETWEEN, OR
  
 `AND, BETWEEN, OR` - when we to filter the data based on multiple conditions then we use AND, BETWEEN.
 
