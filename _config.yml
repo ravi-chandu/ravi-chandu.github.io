@@ -19,7 +19,8 @@ show_social: true
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", Title: "home"}
   - {file: "README.md", Title: "about"}
-  - {file: "Resume.md", Title: "about"}
+  - {file: "Resume.md", Title: "Resume"}
+  - {file: "Sql.md", Title: "SQL"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto: ravichandu464@gmail.com"}
