@@ -21,7 +21,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md", Title: "about"}
   - {file: "Resume.md", Title: "Resume"}
   - {file: "Sql.md", Title: "SQL"}
-  - {file: "/blog.md", Title: "blog"}
+  - {file: "blog.md", Title: "blog"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto: ravichandu464@gmail.com"}
