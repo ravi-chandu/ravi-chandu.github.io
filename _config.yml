@@ -17,7 +17,7 @@ show_social: true
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html", Title: "home"}
+  - {file: "index.md", Title: "home"}
   - {file: "README.md", Title: "about"}
   - {file: "Resume.md", Title: "Resume"}
   - {file: "Sql.md", Title: "SQL"}
