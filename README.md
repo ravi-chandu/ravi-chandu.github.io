@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "PBI Game"
 permalink: "/pbi-game/"
 layout: page
 ---
