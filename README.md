@@ -1,17 +1,13 @@
 ---
 title: "About"
-permalink: "/about/"
+permalink: "/pbi-game/"
 layout: page
 ---
 
-## About me
+# Where is the 🍭
 
 
-my selfy ravi
-
-k
-
-<iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=_SXz6SaTxkK0zA77pdiReI9nU0QEaopLt2Psc9b2rdRUQjVVUVBDNjlIS1pZMkpZWEZHR0pDNUEzMS4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+<iframe width="100%" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjQwNjE2M2ItZDQzNy00ZWI3LWE4YmUtYzM3YmI3NGFmNTk4IiwidCI6ImU5ZjMyNWZkLTkzMjYtNDJjNi1iNGNjLTBlZmJhNWQ4OTE3OCJ9&pageName=ReportSectione210f520b9e6478de6b0" frameborder="0" allowFullScreen="true"></iframe>
 
 ## Projects
  
