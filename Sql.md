@@ -17,6 +17,7 @@
 1. [DATE_TRUNC](#date_trunc)
 1. [DATE_PART](#date_part)
 1. [HAVING](#having)
+1. [JOINs](https://ravi-chandu.github.io/SQL-Joins-Power-BI/)
 
 ## Basic SQL Functions
  
