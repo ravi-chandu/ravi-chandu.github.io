@@ -35,3 +35,26 @@ eg: customers income level vs purchases of products
 
 [![image](https://user-images.githubusercontent.com/92777166/139744702-7bc20c1d-bf3f-4f83-b5d2-3041a05f7414.png)](https://ravi-chandu.github.io/Market-Analysis/)
 
+<br/>
+
+### 3) [Maveen-resturant](https://ravi-chandu.github.io/SQL-Joins-Power-BI/)
+
+Explaining SQL JOINs with Power BI
+
+` Power BI Dashboard - SQL JOINs`
+
+<iframe width="100%" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZmY5YjM1NzItMjhiOC00NTc1LWE1ODUtMGM5ZmM1NmJhNjUwIiwidCI6ImU5ZjMyNWZkLTkzMjYtNDJjNi1iNGNjLTBlZmJhNWQ4OTE3OCJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"> </iframe>
+lets now discuss about SQL JOINs
+
+<br/>
+
+### 4) [Power App](https://ravi-chandu.github.io/Simple-Survey-app/)
+
+Here is the simple Survey app – Collects the data from app and stores in Excel sheets.
+
+We can easily record & update the data using Power Apps We don’t have to write the data which are collect from people and again update in excel sheet.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTuZnGcCJtwHLjCnwDMH5psCiBBD7RP7r2FjMvjHLCnxddGpvucnPku54HDvzACS59vQV29Pe_Y7oPm/embed?start=true&loop=true&delayms=3000" height="315" width="100%" allowfullscreen="" frameborder="0"></iframe>
+
+
+
