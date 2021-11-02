@@ -19,9 +19,9 @@ show_social: true
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md", Title: "home"}
   - {file: "Sql.md", Title: "SQL"}
-  - {file: "README.md", Title: "PBI Game"}
+  - {file: "game.md", Title: "PBI Game"}
   - {file: "blog.md", Title: "blog"}
-
+  - {file: "README.md", Title: "About me"}
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto: ravichandu464@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/ravi-chandu"}
