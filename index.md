@@ -37,7 +37,23 @@ eg: customers income level vs purchases of products
 
 <br/>
 
-### 3) [Maveen-resturant](https://ravi-chandu.github.io/SQL-Joins-Power-BI/)
+### 3) [Maveen Resturant](https://ravi-chandu.github.io/Maveen-resturant/)
+Here are the details
+
+Country = Mexico
+Cities under Mexico(4) = Ciudad Victoria, Cuernavaca, Jiutepec, San Luis Potosi
+Total Consumers = 138
+Total Restaurants = 130
+
+
+1) What type of cuisine is preferred most by consumers?
+Top 5 Preferred cuisine by consumers
+
+<iframe width="100%" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYTRjOGNiNzMtYTQzZi00YWExLTk4MjctMmFkYjE1ZDdjYjU4IiwidCI6ImU5ZjMyNWZkLTkzMjYtNDJjNi1iNGNjLTBlZmJhNWQ4OTE3OCJ9&pageName=ReportSection9ad64b1de59dc31ba9f3" frameborder="0" allowFullScreen="true"></iframe>
+
+<br/>
+
+### 4) [SQL Joins PowerBI](https://ravi-chandu.github.io/SQL-Joins-Power-BI/)
 
 Explaining SQL JOINs with Power BI
 
