@@ -49,7 +49,7 @@ Total Restaurants = 130
 1) What type of cuisine is preferred most by consumers?
 Top 5 Preferred cuisine by consumers
 
-<iframe width="100%" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYTRjOGNiNzMtYTQzZi00YWExLTk4MjctMmFkYjE1ZDdjYjU4IiwidCI6ImU5ZjMyNWZkLTkzMjYtNDJjNi1iNGNjLTBlZmJhNWQ4OTE3OCJ9&pageName=ReportSection9ad64b1de59dc31ba9f3" frameborder="0" allowFullScreen="true"></iframe>
+[![image](https://user-images.githubusercontent.com/92777166/139804755-855de55a-c24e-471f-b240-1319030be0b4.png)](https://ravi-chandu.github.io/Maveen-resturant/)
 
 <br/>
 
@@ -59,8 +59,7 @@ Explaining SQL JOINs with Power BI
 
 ` Power BI Dashboard - SQL JOINs`
 
-<iframe width="100%" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZmY5YjM1NzItMjhiOC00NTc1LWE1ODUtMGM5ZmM1NmJhNjUwIiwidCI6ImU5ZjMyNWZkLTkzMjYtNDJjNi1iNGNjLTBlZmJhNWQ4OTE3OCJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"> </iframe>
-lets now discuss about SQL JOINs
+[![image](https://user-images.githubusercontent.com/92777166/139804865-285765de-0ebb-40dd-8e2f-6d26cf4d4b92.png)](https://ravi-chandu.github.io/SQL-Joins-Power-BI/)
 
 <br/>
 
