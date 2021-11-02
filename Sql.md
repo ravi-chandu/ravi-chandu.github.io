@@ -9,9 +9,14 @@
    3. [AND, BETWEEN, OR](#and-between-or)
 1. [NOT](#not)
 1. [DERIVED COLUMN](#derived-column)
-
-
-
+1. [COUNT](#count)
+1. [DISTINCT](#distinct)
+1. [SUM](#sum)
+1. [MIN & MAX](#min-max)
+1. [GROUP BY](#group-by)
+1. [DATE_TRUNC](#date_trunc)
+1. [DATE_PART](#date_part)
+1. [HAVING](#having)
 
 ## Basic SQL Functions
  
@@ -90,7 +95,7 @@ SELECT markets, customer_names, sales_amount
 
  ---
  
- ##  AND, BETWEEN, OR
+ ## AND, BETWEEN, OR
  
 `AND, BETWEEN, OR` - when we to filter the data based on multiple conditions then we use AND, BETWEEN.
 
@@ -152,3 +157,128 @@ FROM transcation
 *here we create new column and name it as profit_percent*
 
 ---
+
+## COUNT
+
+- `Count` - helpful for counting the number of rows
+
+```SQL
+SELECT COUNT(*) AS number_of_customers
+ FROM customers_table
+ ```
+ 
+ *here we get number of customers and we can use specific column if there is nulls in column*
+ 
+ ---
+ 
+ 
+ ## DISTINCT 
+ 
+ - `Distinct` - it help us to pull the unique items in the column
+
+```SQL
+SELECT DISTINCT customers_id
+FROM transcation
+```
+
+*here we get all thr unique customers*
+
+---
+
+
+ 
+ ## SUM
+ 
+ - `Sum` - adding the all the values in column
+
+```SQL
+SELECT SUM(sales_amount) AS total_sales
+ FROM transcations
+ ```
+ 
+ *here we get total sales value*
+ 
+---
+
+## MIN, MAX
+
+- `MIN, MAX` - pull the min & max value in the column
+
+```SQL
+SELECT MIN(sales_amount) min_sales_amount
+       MAX(sales_amount) max_sales_amount
+  FROM transcation
+  ```
+  
+  ---
+    
+## GROUP BY
+
+- `Group By` - Group By helps us to group the similiar items like how much each customer bought this year,(here cutomer may purchase multiple times in year but we can group it in single value)
+
+```SQL
+SELECT c.customers_id, SUM(sales_amount)  sales_amount
+ FROM customers c
+ JOIN transcations t
+ ON c.customers_id = t.customers_id
+ GROUP BY customer_id
+ ORDER BY customer_id
+ ```
+ 
+ *here we get the total value of each customer purchase, we want to know for this year only then we filter it using WHERE clause ( WHERE order_date BETWEEN 01/01/2021 AND 31/12/2021)*
+ 
+ ---
+ 
+ ## DATE_TRUNC
+ 
+ - `DATE_TRUNC` - same as Group By but DATE_TRUNC groups by date (example total sales by day, visits of the day) we can group not only by day, we  can by 'Second', 'day', 'month', 'year' etc.
+
+```SQL
+SELECT DATE_TRUNC('month', orders_date) month, SUM(sales_amount)
+ FORM transcations
+ GROUP BY 1
+ ORDER BY 2 DESC
+ ```
+ 
+ here date change like this - 01/01/2021 (for entire jan month same as remaining months)
+ 
+*here we gwt month wise total sales in desc order(highest month first)*
+
+---
+
+## DATE_PART
+
+- `DATE_PART` -  DATE_PART help us to pull the specific part of date like 'day','dow'(0 = sunday, 6 = saturday), 'month', 'year', etc. <br>
+example: what is peak day in the week for the last five years
+
+```SQL
+SELECT DATE_PART('dow', order_date) peek_day_of_week, SUM(sales_amount) total_sales
+ FROM transcation
+ WHERE order_date BETWEEN '01/01/2016' AND '31/12/2021'
+GROUP BY 1
+ORDER BY 2;
+```
+
+---
+ 
+ ## HAVING
+ 
+ - `Having` - HAVING is used instead of WHERE(Having function is used when the query is created by agregate functions like sum, divide. here WHERE function not work)
+
+```SQL
+SELECT c.customers_id, SUM(sales_amount) sales_amount
+ FROM customers c
+  JOIN transcation t
+  ON c.id = t.id
+ GROUP BY 1
+ HAVING sales_amount > 1000;
+ ```
+ 
+ *here we get total sales amount by customers who's total sales amount is more than 100 (valuable customer)*
+ 
+ 
+ ---
+ 
+ 
+
+
