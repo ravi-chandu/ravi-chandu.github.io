@@ -18,9 +18,8 @@ show_social: true
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md", Title: "home"}
-  - {file: "README.md", Title: "PBI Game"}
-  - {file: "Resume.pdf", Title: "Resume"}
   - {file: "Sql.md", Title: "SQL"}
+  - {file: "README.md", Title: "PBI Game"}
   - {file: "blog.md", Title: "blog"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
