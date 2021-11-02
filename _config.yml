@@ -17,7 +17,7 @@ show_social: true
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.md", Title: "home"}
+  - {file: "index.md"}
   - {file: "Sql.md", Title: "SQL"}
   - {file: "game.md", Title: "PBI Game"}
   - {file: "blog.md", Title: "blog"}
