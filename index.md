@@ -33,4 +33,4 @@ eg: customers income level vs purchases of products
 - R = correlation Cofficient(ranges from -1 to 1),
 - R^2 = Coefficient of Determination(ranges from 0 to 1)
 
-[![image](https://user-images.githubusercontent.com/92777166/139744702-7bc20c1d-bf3f-4f83-b5d2-3041a05f7414.png)](
+[![image](https://user-images.githubusercontent.com/92777166/139744702-7bc20c1d-bf3f-4f83-b5d2-3041a05f7414.png)](https://ravi-chandu.github.io/Market-Analysis/)
