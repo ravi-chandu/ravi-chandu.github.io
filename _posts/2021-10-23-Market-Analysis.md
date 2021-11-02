@@ -1,4 +1,4 @@
-# Market-Analysis-Report-for-National-Clothing-Chain
+# Market Analysis Report for National Clothing Chain
 `Udacity Project`
 
 ## Linear regression
