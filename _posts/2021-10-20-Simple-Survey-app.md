@@ -1,11 +1,10 @@
 ---
 title:  " Power Apps – Simple Survey app"
-mathjax: true
 layout: post
 categories: media
 ---
 
-
+[`Github Repo`](https://github.com/ravi-chandu/sample-survey-app/blob/main/README.md)
 
 
 Here is the simple Survey app – Collects the data from app and stores in Excel sheets 
