@@ -1,3 +1,8 @@
+---
+categories: Power BI
+---
+
+
 # Maveen-resturant
 *Maven Restaurant Challenge(Maven Analytics)*
 
