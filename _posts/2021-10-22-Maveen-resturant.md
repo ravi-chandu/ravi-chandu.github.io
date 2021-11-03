@@ -1,6 +1,7 @@
 ---
-categories: Power BI
-tags: Power BI
+layout : post
+category: Power BI
+tags: [Power BI]
 ---
 
 
