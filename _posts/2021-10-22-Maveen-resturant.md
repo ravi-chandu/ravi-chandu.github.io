@@ -1,5 +1,5 @@
 ---
-categories: Power BI
+tags: Power BI
 ---
 
 
