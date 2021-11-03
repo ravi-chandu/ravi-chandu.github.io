@@ -17,9 +17,10 @@ layout: page
 
 
 ### 1) [Sales Insights Data Analysis - Power BI](https://ravi-chandu.github.io/sales-Analysis/) <br>
-sales insights, top n and forecasr, Data is stored in mysql localhost
-Extract the data - we need to connect to MySQL Database
-
+In this report 
+- I created Dynamic forcast for next 1 year revenue & profit and 
+- Dyname Top N customers contribution to revenue and profits <br>
+ the users eaily know thier Top N customers to make deicisons and future plans. And Data source is from Local Mysql Database.
 [![image](https://user-images.githubusercontent.com/92777166/139744332-5a42a730-5603-40ca-9f28-d92ad0f8899a.png)](https://ravi-chandu.github.io/sales-Analysis/)
 
 <br/>
