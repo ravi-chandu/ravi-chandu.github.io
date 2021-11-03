@@ -1,3 +1,7 @@
+---
+permalink: "/Power-BI/Sales-Analysis/"
+---
+
 # AtliQ - Sales Insights Data Analysis - Power BI
 
 
