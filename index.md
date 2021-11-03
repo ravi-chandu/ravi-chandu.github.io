@@ -10,10 +10,12 @@ layout: page
 **Skills**:  Microsoft Power BI,  SQL, Microsoft Excel, Power Apps, Python
 
 <br/>
+
 ---
 
 ## Projects 
-<br/>
+
+
 ### 1) [Sales Insights Data Analysis - Power BI](https://ravi-chandu.github.io/sales-Analysis/) <br>
 sales insights, top n and forecasr, Data is stored in mysql localhost
 Extract the data - we need to connect to MySQL Database
