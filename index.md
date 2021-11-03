@@ -13,11 +13,11 @@ layout: page
 
 ## Projects 
 <br/>
-### 1) [Sales Insights Data Analysis - Power BI](https://ravi-chandu.github.io/sales-insights/) <br>
+### 1) [Sales Insights Data Analysis - Power BI](https://ravi-chandu.github.io/sales-Analysis/) <br>
 sales insights, top n and forecasr, Data is stored in mysql localhost
 Extract the data - we need to connect to MySQL Database
 
-[![image](https://user-images.githubusercontent.com/92777166/139744332-5a42a730-5603-40ca-9f28-d92ad0f8899a.png)](https://ravi-chandu.github.io/sales-insights/)
+[![image](https://user-images.githubusercontent.com/92777166/139744332-5a42a730-5603-40ca-9f28-d92ad0f8899a.png)](https://ravi-chandu.github.io/sales-Analysis/)
 
 <br/>
 ### 2) [Market Analysis Report for National Clothing Chain](https://ravi-chandu.github.io/Market-Analysis/)
