@@ -1,8 +1,3 @@
----
-layout: post
-permalink: "/Power-BI/Maveen-resturant/"
-permalink: "/Power-BI/"
----
 
 
 # Maveen-resturant
