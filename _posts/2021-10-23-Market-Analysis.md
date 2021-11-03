@@ -1,6 +1,8 @@
 # Market Analysis Report for National Clothing Chain
 `Udacity Project`
 
+[`Github Repo`](https://github.com/ravi-chandu/Market-Analysis-Report-for-National-Clothing-Chain)
+
 ## Linear regression
 Linear Regression method helps us to find whether the relationship among X variable(Independent) & Y variable(Dependent) is exists & level of effect.
 here 
