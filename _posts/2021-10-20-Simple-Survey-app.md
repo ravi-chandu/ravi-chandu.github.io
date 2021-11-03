@@ -4,7 +4,7 @@ layout: post
 categories: media
 ---
 
-[`Github Repo`](https://github.com/ravi-chandu/sample-survey-app/blob/main/README.md)
+[`Github Repo`](https://github.com/ravi-chandu/sample-survey-app)
 
 
 Here is the simple Survey app – Collects the data from app and stores in Excel sheets 
