@@ -1,7 +1,6 @@
 ---
-layout : post
-category: Power BI
-tags: [Power BI]
+layout: post
+permalink: "/Power-BI/Maveen-resturant/"
 ---
 
 
