@@ -1,5 +1,8 @@
 # SQL-Joins-PowerBI
+
+[`Github Repo`](https://github.com/ravi-chandu/SQL-Joins-PowerBI)<br>
 Explaining SQL JOINs with Power BI 
+
 
 ` Power BI Dashboard - SQL JOINs`
 <iframe width="100%" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZmY5YjM1NzItMjhiOC00NTc1LWE1ODUtMGM5ZmM1NmJhNjUwIiwidCI6ImU5ZjMyNWZkLTkzMjYtNDJjNi1iNGNjLTBlZmJhNWQ4OTE3OCJ9&pageName=ReportSection831f013a902f45eed7c9" frameborder="0" allowFullScreen="true"></iframe>
