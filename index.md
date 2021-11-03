@@ -7,7 +7,7 @@ layout: page
   
 ## hi😍, <br> MySelf  **` Ravi Chandu `** 
  
-**Skills**:  Microsoft Power BI,  SQL, Microsoft Excel, Power Apps, Python
+**Skills**:  Microsoft Power BI,  [SQL](https://ravi-chandu.github.io/Sql/), Microsoft Excel, Power Apps
 
 <br/>
 
