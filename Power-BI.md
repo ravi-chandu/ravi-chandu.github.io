@@ -1,5 +1,5 @@
 ---
-title: " Power BI "
+title: " Microsoft Power BI "
 layout: page
 ---
 
