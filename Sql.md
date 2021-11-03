@@ -30,7 +30,7 @@
 - `ORDER BY` - for sort the data - by specifying the column name we want to sort the table ( by default OERDER BY is asec order, we want to sort in Desc order then we have to specify `DESC` after the column name).
   we can sort multiple columns and specify DESC after the column name for which we want sort it in DESC order.
   
-```SQL
+```sql
 SELECT orders_id, sales_amount
  FROM transcation
 ORDER BY sales_amount DESC
@@ -43,7 +43,7 @@ LIMIT 10;
 ## WHERE
 - `WHERE` - it is acts like a filter *where the orders value is more than $1000* like that. common symbols used in WHERE statement are(for numerical data) >, <, >=, <=, =, !=. we can use it for non numerical columns by using = , !=
 
-```SQL
+```sql
 SELECT orders_id, sales_amount
  FROM transcation
 WHERE sales_amount > 1000;
@@ -61,7 +61,7 @@ these are the names we have, we want to filter all the customners who as name "r
 
 for this we can use `LIKE` function
 
-```SQL
+```sql
 SELECT customer_names
  FROM customers
  WHERE customer_names LIKE '%ram%';
@@ -85,7 +85,7 @@ we can use single letters also like name starts with r - 'r%'
 ## IN
 
 - `IN` - If we want to filter the columns by more than one value then we use IN function
-```SQL
+```sql
 SELECT markets, customer_names, sales_amount
  FROM transcations
  WHERE markets IN ('hyd', 'kkr', 'alu')
@@ -101,7 +101,7 @@ SELECT markets, customer_names, sales_amount
 `AND, BETWEEN, OR` - when we to filter the data based on multiple conditions then we use AND, BETWEEN.
 
 AND
-```SQL
+```sql
 SELECT markets, customer_names, sales_amount
  FROM transcations
 WHERE sales_amount >= 1000 AND Markets = 'hyd';
@@ -119,7 +119,7 @@ WHERE sales_amount BETWEEN 1000 AND 1500;
 *here we filtered sales amount between 1000 to 1500*
 
 OR 
-```SQL
+```sql
 SELECT markets, customer_names, sales_amount
  FROM transcations
 WHERE markets = 'hyd' OR customer_names = 'ram';
@@ -129,7 +129,7 @@ WHERE markets = 'hyd' OR customer_names = 'ram';
 
 We can use all these in single query also
 
-```SQL
+```sql
 SELECT markets, customer_names, sales_amount
  FROM transcations
 WHERE (sales_amount BETWEEN 1000 AND 1500) 
@@ -150,7 +150,7 @@ AND markets = 'hyd';
 
 - `Derived Columns`  - we can create a new column using existing columns like adding two columns or calculating percentage and give column name by AS statement but we can simply enter name after the condition it automatically take it as column header.
 
-```SQL
+```sql
 SELECT orders_id, sales_amount, (profit/sales_amount)*100 profit_percent
 FROM transcation
 ```
@@ -163,7 +163,7 @@ FROM transcation
 
 - `Count` - helpful for counting the number of rows
 
-```SQL
+```sql
 SELECT COUNT(*) AS number_of_customers
  FROM customers_table
  ```
@@ -177,7 +177,7 @@ SELECT COUNT(*) AS number_of_customers
  
  - `Distinct` - it help us to pull the unique items in the column
 
-```SQL
+```sql
 SELECT DISTINCT customers_id
 FROM transcation
 ```
@@ -192,7 +192,7 @@ FROM transcation
  
  - `Sum` - adding the all the values in column
 
-```SQL
+```sql
 SELECT SUM(sales_amount) AS total_sales
  FROM transcations
  ```
@@ -205,7 +205,7 @@ SELECT SUM(sales_amount) AS total_sales
 
 - `MIN, MAX` - pull the min & max value in the column
 
-```SQL
+```sql
 SELECT MIN(sales_amount) min_sales_amount
        MAX(sales_amount) max_sales_amount
   FROM transcation
@@ -217,7 +217,7 @@ SELECT MIN(sales_amount) min_sales_amount
 
 - `Group By` - Group By helps us to group the similiar items like how much each customer bought this year,(here cutomer may purchase multiple times in year but we can group it in single value)
 
-```SQL
+```sql
 SELECT c.customers_id, SUM(sales_amount)  sales_amount
  FROM customers c
  JOIN transcations t
@@ -234,7 +234,7 @@ SELECT c.customers_id, SUM(sales_amount)  sales_amount
  
  - `DATE_TRUNC` - same as Group By but DATE_TRUNC groups by date (example total sales by day, visits of the day) we can group not only by day, we  can by 'Second', 'day', 'month', 'year' etc.
 
-```SQL
+```sql
 SELECT DATE_TRUNC('month', orders_date) month, SUM(sales_amount)
  FORM transcations
  GROUP BY 1
@@ -252,7 +252,7 @@ SELECT DATE_TRUNC('month', orders_date) month, SUM(sales_amount)
 - `DATE_PART` -  DATE_PART help us to pull the specific part of date like 'day','dow'(0 = sunday, 6 = saturday), 'month', 'year', etc. <br>
 example: what is peak day in the week for the last five years
 
-```SQL
+```sql
 SELECT DATE_PART('dow', order_date) peek_day_of_week, SUM(sales_amount) total_sales
  FROM transcation
  WHERE order_date BETWEEN '01/01/2016' AND '31/12/2021'
@@ -266,7 +266,7 @@ ORDER BY 2;
  
  - `Having` - HAVING is used instead of WHERE(Having function is used when the query is created by agregate functions like sum, divide. here WHERE function not work)
 
-```SQL
+```sql
 SELECT c.customers_id, SUM(sales_amount) sales_amount
  FROM customers c
   JOIN transcation t
