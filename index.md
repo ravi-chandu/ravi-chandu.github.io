@@ -8,9 +8,11 @@ layout: page
 ## hi😍, <br> MySelf  **` Ravi Chandu `** 
  
 **Skills**:  [Microsoft Power BI](https://ravi-chandu.github.io/Power-BI/),  [SQL](https://ravi-chandu.github.io/Sql/), Microsoft Excel, [Power Apps](https://ravi-chandu.github.io/Power-Apps/)
+<br>
+
+[`Linkedin`](https://www.linkedin.com/in/ravichandu1/)   [`Github`](https://github.com/ravi-chandu)
 
 <br/>
-
 ---
 
 ## Projects 
