@@ -19,3 +19,4 @@ Basically I am from finance background (Some say it as Accounts, Audit or Tax - 
 
 >I like to be in tech, creative, innovtive new things.
 >but for me CA is like doing repetative things, like reading the guidlines, reporting or filling the required documents. 
+>....
