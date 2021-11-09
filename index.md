@@ -12,6 +12,9 @@ layout: page
 
 [`Linkedin`](https://www.linkedin.com/in/ravichandu1/)   [`Github`](https://github.com/ravi-chandu)
 
+[`Resume`](https://github.com/ravi-chandu/ravi-chandu.github.io/files/7506253/Ravi.Chandu.Edru.pdf)
+
+
 <br/>
 ---
 
