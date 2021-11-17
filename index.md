@@ -13,7 +13,7 @@ layout: page
 - [`Linkedin`](https://www.linkedin.com/in/ravichandu1/)  
 - [`Github`](https://github.com/ravi-chandu)  
 - [`badges`](https://www.credly.com/users/ravi-chandu-edru/badges)
-- [`Resume`](https://github.com/ravi-chandu/ravi-chandu.github.io/files/7534186/Ravi.Chandu.Edru.1.pdf)
+- [`Resume`](https://github.com/ravi-chandu/ravi-chandu.github.io/files/7557671/Ravi.Chandu.Edru.1.pdf)
 - [`upwork`](https://www.upwork.com/freelancers/~010b229e26f21cd3c3)
 
 <br/>
