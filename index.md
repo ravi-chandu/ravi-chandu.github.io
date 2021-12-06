@@ -10,11 +10,13 @@ layout: page
 **Skills**:  [Microsoft Power BI](https://ravi-chandu.github.io/Power-BI/),  [SQL](https://ravi-chandu.github.io/Sql/), Microsoft Excel, [Power Apps](https://ravi-chandu.github.io/Power-Apps/)
 <br>
 
+- [`Upwork`](https://www.upwork.com/freelancers/~010b229e26f21cd3c3)
 - [`Linkedin`](https://www.linkedin.com/in/ravichandu1/)  
 - [`Github`](https://github.com/ravi-chandu)  
-- [`badges`](https://www.credly.com/users/ravi-chandu-edru/badges)
+- [`Contra`](https://contra.com/ravi_chandu)
 - [`Resume`](https://github.com/ravi-chandu/ravi-chandu.github.io/files/7557671/Ravi.Chandu.Edru.1.pdf)
-- [`upwork`](https://www.upwork.com/freelancers/~010b229e26f21cd3c3)
+- [`badges`](https://www.credly.com/users/ravi-chandu-edru/badges)
+
 
 <br/>
 
