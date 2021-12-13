@@ -14,7 +14,7 @@ layout: page
 - [`Linkedin`](https://www.linkedin.com/in/ravichandu1/)  
 - [`Github`](https://github.com/ravi-chandu)  
 - [`Contra`](https://contra.com/ravi_chandu)
-- [`Resume`](https://github.com/ravi-chandu/ravi-chandu.github.io/files/7557671/Ravi.Chandu.Edru.1.pdf)
+- [`Resume`](https://github.com/ravi-chandu/ravi-chandu.github.io/files/7703228/Ravi.Chandu.Edru.1.pdf)
 - [`badges`](https://www.credly.com/users/ravi-chandu-edru/badges)
 
 
