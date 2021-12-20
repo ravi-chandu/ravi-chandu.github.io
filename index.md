@@ -24,8 +24,11 @@ layout: page
 
 ## Projects 
 
+### 1) [Data Analysis For A Restaurant Menu](https://ravi-chandu.github.io/Data-analysis-for-a-restaurant-menu/) <br>
 
-### 1) [Sales Insights Data Analysis - Power BI](https://ravi-chandu.github.io/sales-Analysis/) <br>
+[![Slide2](https://user-images.githubusercontent.com/92777166/146717603-83081b75-b4df-43c7-b313-2ff9ffd6c134.JPG)](https://ravi-chandu.github.io/Data-analysis-for-a-restaurant-menu/)
+
+### 2) [Sales Insights Data Analysis - Power BI](https://ravi-chandu.github.io/sales-Analysis/) <br>
 In this report 
 - I created a Dynamic forecast for the next 1-year revenue & profit and 
 - Dynamic Top N customers contribution to revenue and profits <br>
@@ -33,7 +36,8 @@ In this report
 [![image](https://user-images.githubusercontent.com/92777166/139744332-5a42a730-5603-40ca-9f28-d92ad0f8899a.png)](https://ravi-chandu.github.io/sales-Analysis/)
 
 <br/>
-### 2) [Market Analysis Report for National Clothing Chain](https://ravi-chandu.github.io/Market-Analysis/)
+
+### 3) [Market Analysis Report for National Clothing Chain](https://ravi-chandu.github.io/Market-Analysis/)
 
 ## Linear regression
 Linear Regression method helps us to find whether the relationship among X variable(Independent) & Y variable(Dependent) is exists & level of effect.
@@ -50,7 +54,7 @@ eg: customers income level vs purchases of products
 
 <br/>
 
-### 3) [Maveen Resturant](https://ravi-chandu.github.io/Maveen-resturant/)
+### 4) [Maveen Resturant](https://ravi-chandu.github.io/Maveen-resturant/)
 Here are the details
 
 Country = Mexico
@@ -66,7 +70,7 @@ Top 5 Preferred cuisine by consumers
 
 <br/>
 
-### 4) [SQL Joins PowerBI](https://ravi-chandu.github.io/SQL-Joins-Power-BI/)
+### 5) [SQL Joins PowerBI](https://ravi-chandu.github.io/SQL-Joins-Power-BI/)
 
 Explaining SQL JOINs with Power BI
 
@@ -76,7 +80,7 @@ Explaining SQL JOINs with Power BI
 
 <br/>
 
-### 4) [Power App](https://ravi-chandu.github.io/Simple-Survey-app/)
+### 6) [Power App](https://ravi-chandu.github.io/Simple-Survey-app/)
 
 Here is the simple Survey app – Collects the data from app and stores in Excel sheets.
 
