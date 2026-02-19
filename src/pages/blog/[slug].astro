@@ -1,0 +1,230 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.archived);
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: any;
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+// Get related posts
+const allPosts = await getCollection('blog', ({ data }) => !data.archived);
+const relatedPosts = allPosts
+  .filter(
+    (p) =>
+      p.data.category === post.data.category &&
+      p.slug !== post.slug
+  )
+  .slice(0, 3);
+
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }).format(date);
+};
+---
+
+<BaseLayout
+  title={`${post.data.title} - Ravi Chandu`}
+  description={post.data.description}
+  image={post.data.image}
+>
+  <!-- Article Header -->
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <!-- Meta -->
+    <div class="mb-8 text-center">
+      <div class="flex items-center justify-center gap-4 mb-4 text-sm text-gray-600 dark:text-gray-400">
+        <time datetime={post.data.pubDate.toISOString()}>
+          {formatDate(post.data.pubDate)}
+        </time>
+        {post.data.category && (
+          <>
+            <span>•</span>
+            <span class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-semibold text-xs">
+              {post.data.category}
+            </span>
+          </>
+        )}
+        <span>•</span>
+        <span>{Math.ceil(post.body.length / 200)} min read</span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+        {post.data.title}
+      </h1>
+
+      <!-- Description -->
+      <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        {post.data.description}
+      </p>
+    </div>
+
+    <!-- Featured Image -->
+    {post.data.image && (
+      <div class="mb-12 rounded-lg overflow-hidden shadow-lg">
+        <img
+          src={post.data.image}
+          alt={post.data.title}
+          class="w-full h-auto object-cover"
+        />
+      </div>
+    )}
+
+    <!-- Article Content -->
+    <div class="prose dark:prose-invert max-w-none mb-16">
+      <Content />
+    </div>
+
+    <!-- Article Footer -->
+    <div class="border-t border-gray-200 dark:border-gray-800 pt-8">
+      <div class="mb-8">
+        <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Author</h3>
+        <p class="text-gray-600 dark:text-gray-400">
+          {post.data.author || 'Ravi Chandu'} - Data & Analytics Specialist
+        </p>
+      </div>
+
+      <!-- Tags -->
+      {post.data.tags && post.data.tags.length > 0 && (
+        <div>
+          <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3">Tags</h3>
+          <div class="flex flex-wrap gap-2">
+            {post.data.tags.map((tag: string) => (
+              <span class="inline-block px-3 py-1 rounded-full text-sm bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-700 dark:hover:text-blue-300 transition-colors cursor-pointer">
+                #{tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </article>
+
+  <!-- Related Posts -->
+  {relatedPosts.length > 0 && (
+    <section class="border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white">
+          Related Articles
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {relatedPosts.map((relatedPost) => (
+            <BlogCard
+              title={relatedPost.data.title}
+              description={relatedPost.data.description}
+              pubDate={relatedPost.data.pubDate}
+              slug={relatedPost.slug}
+              category={relatedPost.data.category}
+              readingTime={`${Math.ceil(relatedPost.body.length / 200)} min read`}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+</BaseLayout>
+
+<style is:global>
+  .prose {
+    --tw-prose-headings: var(--tw-prose-body);
+    --tw-prose-lead: var(--tw-prose-body);
+    --tw-prose-links: var(--tw-prose-body);
+    --tw-prose-bold: var(--tw-prose-body);
+    --tw-prose-counters: var(--tw-prose-body);
+    --tw-prose-bullets: var(--tw-prose-body);
+    --tw-prose-hr: var(--tw-prose-body);
+    --tw-prose-quotes: var(--tw-prose-body);
+    --tw-prose-quote-borders: var(--tw-prose-body);
+    --tw-prose-captions: var(--tw-prose-body);
+    --tw-prose-code: var(--tw-prose-body);
+    --tw-prose-pre-code: var(--tw-prose-body);
+    --tw-prose-pre-bg: var(--tw-prose-body);
+    --tw-prose-pre-border: var(--tw-prose-body);
+    --tw-prose-th-borders: var(--tw-prose-body);
+    --tw-prose-td-borders: var(--tw-prose-body);
+  }
+
+  .dark .prose {
+    --tw-prose-body: rgb(243, 244, 246);
+    --tw-prose-headings: rgb(243, 244, 246);
+    --tw-prose-lead: rgb(209, 213, 219);
+    --tw-prose-links: rgb(34, 211, 238);
+    --tw-prose-bold: rgb(243, 244, 246);
+    --tw-prose-counters: rgb(209, 213, 219);
+    --tw-prose-bullets: rgb(75, 85, 99);
+    --tw-prose-hr: rgb(31, 41, 55);
+    --tw-prose-quotes: rgb(107, 114, 128);
+    --tw-prose-quote-borders: rgb(55, 65, 81);
+    --tw-prose-captions: rgb(107, 114, 128);
+    --tw-prose-code: rgb(243, 244, 246);
+    --tw-prose-pre-code: rgb(243, 244, 246);
+    --tw-prose-pre-bg: rgb(17, 24, 39);
+    --tw-prose-pre-border: rgb(31, 41, 55);
+    --tw-prose-th-borders: rgb(75, 85, 99);
+    --tw-prose-td-borders: rgb(31, 41, 55);
+  }
+
+  .prose a {
+    color: rgb(0, 102, 255);
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+
+  .dark .prose a {
+    color: rgb(34, 211, 238);
+  }
+
+  .prose a:hover {
+    color: rgb(0, 145, 255);
+  }
+
+  .dark .prose a:hover {
+    color: rgb(6, 182, 212);
+  }
+
+  .prose code {
+    background-color: rgb(243, 244, 246);
+    color: rgb(31, 41, 55);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+
+  .dark .prose code {
+    background-color: rgb(31, 41, 55);
+    color: rgb(243, 244, 246);
+  }
+
+  .prose pre {
+    background-color: rgb(17, 24, 39);
+    border: 1px solid rgb(31, 41, 55);
+  }
+
+  .prose pre code {
+    background-color: transparent;
+    color: rgb(243, 244, 246);
+    padding: 0;
+  }
+
+  .prose blockquote {
+    border-left-color: rgb(0, 102, 255);
+  }
+
+  .dark .prose blockquote {
+    border-left-color: rgb(34, 211, 238);
+  }
+</style>

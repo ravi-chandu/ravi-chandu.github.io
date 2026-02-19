@@ -1,0 +1,66 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  slug: string;
+  category?: string;
+  readingTime?: string;
+}
+
+const { title, description, pubDate, slug, category, readingTime } = Astro.props;
+
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }).format(date);
+};
+---
+
+<article
+  class="group border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:border-blue-500 dark:hover:border-cyan-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white dark:bg-gray-800"
+>
+  <!-- Metadata -->
+  <div class="flex items-center gap-3 mb-3 text-sm text-gray-500 dark:text-gray-400">
+    <time datetime={pubDate.toISOString()}>
+      {formatDate(pubDate)}
+    </time>
+    {readingTime && (
+      <>
+        <span>•</span>
+        <span>{readingTime}</span>
+      </>
+    )}
+    {category && (
+      <>
+        <span>•</span>
+        <span class="inline-block px-2 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300">
+          {category}
+        </span>
+      </>
+    )}
+  </div>
+
+  <!-- Title -->
+  <h3 class="font-bold text-xl text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors">
+    <a href={`/blog/${slug}`} class="hover:underline">
+      {title}
+    </a>
+  </h3>
+
+  <!-- Description -->
+  <p class="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">
+    {description}
+  </p>
+
+  <!-- Read More Link -->
+  <a
+    href={`/blog/${slug}`}
+    class="inline-flex items-center gap-2 text-blue-600 dark:text-cyan-400 hover:gap-3 transition-all font-medium"
+  >
+    Read Article
+    <span class="transition-transform">→</span>
+  </a>
+</article>

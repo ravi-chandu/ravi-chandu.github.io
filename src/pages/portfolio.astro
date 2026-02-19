@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+const categories = ['Power BI', 'Power Apps', 'SQL', 'Data Analysis'];
+---
+
+<BaseLayout
+  title="Portfolio - Ravi Chandu"
+  description="Explore my projects and work in Power BI, SQL, Power Apps, and data analytics."
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-slate-900 dark:to-slate-800 py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Portfolio</h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400">
+        Showcase of my work in data analytics, business intelligence, and automation
+      </p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="flex flex-wrap gap-3 mb-12">
+      <button
+        class="filter-btn active px-4 py-2 rounded-lg bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-semibold transition-colors hover:bg-blue-200 dark:hover:bg-blue-800"
+        data-filter="all"
+      >
+        All Projects
+      </button>
+      {
+        categories.map((category) => (
+          <button
+            class="filter-btn px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold transition-colors hover:bg-gray-200 dark:hover:bg-gray-700"
+            data-filter={category}
+          >
+            {category}
+          </button>
+        ))
+      }
+    </div>
+
+    <!-- Projects Grid -->
+    {
+      projects.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <div class="project-card" data-category={project.data.category}>
+              <ProjectCard
+                title={project.data.title}
+                description={project.data.description}
+                image={project.data.image}
+                technologies={project.data.technologies}
+                link={project.data.link}
+                github={project.data.github}
+                category={project.data.category}
+              />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-20">
+          <p class="text-gray-600 dark:text-gray-400 text-xl mb-4">
+            Projects coming soon! Check back later for more work samples.
+          </p>
+          <a
+            href="/"
+            class="text-blue-600 dark:text-cyan-400 hover:underline font-semibold"
+          >
+            ← Back to Home
+          </a>
+        </div>
+      )
+    }
+  </section>
+</BaseLayout>
+
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+
+      // Update active button
+      filterButtons.forEach((btn) => btn.classList.remove('active', 'bg-blue-100', 'dark:bg-blue-900', 'text-blue-700', 'dark:text-blue-300'));
+      filterButtons.forEach((btn) => btn.classList.add('bg-gray-100', 'dark:bg-gray-800', 'text-gray-700', 'dark:text-gray-300'));
+      button.classList.add('active', 'bg-blue-100', 'dark:bg-blue-900', 'text-blue-700', 'dark:text-blue-300');
+      button.classList.remove('bg-gray-100', 'dark:bg-gray-800', 'text-gray-700', 'dark:text-gray-300');
+
+      // Filter projects
+      projectCards.forEach((card) => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.style.display = 'block';
+          setTimeout(() => {
+            card.style.opacity = '1';
+          }, 0);
+        } else {
+          card.style.opacity = '0';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 300);
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .project-card {
+    transition: opacity 0.3s ease-out;
+  }
+</style>

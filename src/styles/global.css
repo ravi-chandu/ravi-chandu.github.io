@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0066ff;
+  --color-secondary: #00d4ff;
+  --color-accent: #ff0066;
+  --color-text: #1f2937;
+  --color-bg: #ffffff;
+  --color-border: #e5e7eb;
+  --duration-normal: 250ms;
+  --duration-slow: 350ms;
+  --easing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #f3f4f6;
+    --color-bg: #0f172a;
+    --color-border: #1f2937;
+  }
+}
+
+html.dark {
+  --color-text: #f3f4f6;
+  --color-bg: #0f172a;
+  --color-border: #1f2937;
+}
+
+* {
+  transition: background-color var(--duration-normal) var(--easing-smooth),
+              color var(--duration-normal) var(--easing-smooth),
+              border-color var(--duration-normal) var(--easing-smooth);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  @apply antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-600 rounded-full hover:bg-gray-500 dark:hover:bg-gray-500;
+}
+
+/* Smooth transitions for theme */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

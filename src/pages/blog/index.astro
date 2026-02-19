@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+// Get all non-archived blog posts
+const allPosts = await getCollection('blog', ({ data }) => !data.archived);
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const postsPerPage = 12;
+const totalPages = Math.ceil(sortedPosts.length / postsPerPage);
+const page = 1; // Static generation for page 1
+const start = (page - 1) * postsPerPage;
+const end = start + postsPerPage;
+const paginatedPosts = sortedPosts.slice(start, end);
+---
+
+<BaseLayout
+  title="Blog - Ravi Chandu"
+  description="Articles about Power BI, SQL, data analytics, and business intelligence."
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-slate-900 dark:to-slate-800 py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Blog</h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400">
+        Articles, tutorials, and insights about data analytics and business intelligence
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Posts Grid -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    {
+      paginatedPosts.length > 0 ? (
+        <>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {paginatedPosts.map((post) => (
+              <BlogCard
+                title={post.data.title}
+                description={post.data.description}
+                pubDate={post.data.pubDate}
+                slug={post.slug}
+                category={post.data.category}
+                readingTime={`${Math.ceil(post.body.length / 200)} min read`}
+              />
+            ))}
+          </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div class="flex justify-center items-center gap-4 mt-16">
+              {page > 1 && (
+                <a
+                  href={page === 2 ? '/blog' : `/blog/page/${page - 1}`}
+                  class="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-blue-600 dark:hover:border-cyan-400 transition-colors"
+                >
+                  ← Previous
+                </a>
+              )}
+
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+                <a
+                  href={p === 1 ? '/blog' : `/blog/page/${p}`}
+                  class={`px-4 py-2 rounded-lg transition-colors ${
+                    p === page
+                      ? 'bg-blue-600 dark:bg-cyan-500 text-white'
+                      : 'border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-blue-600 dark:hover:border-cyan-400'
+                  }`}
+                >
+                  {p}
+                </a>
+              ))}
+
+              {page < totalPages && (
+                <a
+                  href={`/blog/page/${page + 1}`}
+                  class="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-blue-600 dark:hover:border-cyan-400 transition-colors"
+                >
+                  Next →
+                </a>
+              )}
+            </div>
+          )}
+        </>
+      ) : (
+        <div class="text-center py-20">
+          <p class="text-gray-600 dark:text-gray-400 text-xl mb-4">
+            Blog posts coming soon! Check back later.
+          </p>
+          <a
+            href="/"
+            class="text-blue-600 dark:text-cyan-400 hover:underline font-semibold"
+          >
+            ← Back to Home
+          </a>
+        </div>
+      )
+    }
+  </section>
+</BaseLayout>

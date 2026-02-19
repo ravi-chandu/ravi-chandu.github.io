@@ -1,17 +1,187 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero';
+import ProjectCard from '../components/ProjectCard.astro';
+import BlogCard from '../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
 
+// Get featured projects and recent blog posts
+const allProjects = await getCollection('projects');
+const featuredProjects = allProjects.slice(0, 4);
+
+const allPosts = await getCollection('blog', ({ data }) => !data.archived);
+const recentPosts = allPosts.slice(0, 3);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+  <Hero
+    client:load
+    title="Ravi Chandu"
+    subtitle="Data & Analytics Specialist"
+    description="Transforming data into actionable insights. Specialized in Power BI, SQL, Power Apps, and data automation."
+    ctas={[
+      { label: 'View Portfolio', href: '/portfolio', variant: 'primary' },
+      { label: 'Learn More', href: '/about', variant: 'secondary' },
+    ]}
+  />
+
+  <!-- About Preview Section -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+          Full-Stack Data Professional
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-4">
+          Dedicated to transforming complex data into clear, actionable insights. With expertise across the entire analytics stack, I help organizations make data-driven decisions.
+        </p>
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">
+          Transitioned from Chartered Accountancy to technology, bringing strong financial acumen and analytical rigor to every project.
+        </p>
+        <a
+          href="/about"
+          class="inline-flex items-center gap-2 text-blue-600 dark:text-cyan-400 hover:gap-3 transition-all font-semibold text-lg"
+        >
+          Read Full Story
+          <span>→</span>
+        </a>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="p-6 rounded-lg border border-gray-200 dark:border-gray-700 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-900 hover:border-blue-500 dark:hover:border-cyan-500 transition-colors">
+          <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Power BI</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Dashboard design, DAX, data modeling</p>
+        </div>
+        <div class="p-6 rounded-lg border border-gray-200 dark:border-gray-700 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-900 hover:border-blue-500 dark:hover:border-cyan-500 transition-colors">
+          <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">SQL</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Query optimization, data warehousing</p>
+        </div>
+        <div class="p-6 rounded-lg border border-gray-200 dark:border-gray-700 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-900 hover:border-blue-500 dark:hover:border-cyan-500 transition-colors">
+          <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Power Apps</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Canvas apps, automation flows</p>
+        </div>
+        <div class="p-6 rounded-lg border border-gray-200 dark:border-gray-700 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-900 hover:border-blue-500 dark:hover:border-cyan-500 transition-colors">
+          <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Analysis</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Forecasting, statistical analysis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-gray-200 dark:border-gray-800">
+    <div class="mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">Featured Projects</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-400">
+        Recent work showcasing expertise in data analytics and business intelligence
+      </p>
+    </div>
+
+    {
+      featuredProjects.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {featuredProjects.map((project) => (
+            <ProjectCard
+              title={project.data.title}
+              description={project.data.description}
+              image={project.data.image}
+              technologies={project.data.technologies}
+              link={project.data.link}
+              github={project.data.github}
+              category={project.data.category}
+            />
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-12">
+          <p class="text-gray-600 dark:text-gray-400 mb-4">Projects coming soon...</p>
+          <a href="/portfolio" class="text-blue-600 dark:text-cyan-400 hover:underline font-semibold">
+            View Portfolio →
+          </a>
+        </div>
+      )
+    }
+
+    <div class="text-center mt-12">
+      <a
+        href="/portfolio"
+        class="inline-flex items-center gap-2 px-8 py-4 rounded-lg border-2 border-blue-600 dark:border-cyan-500 text-blue-600 dark:text-cyan-400 font-semibold hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
+      >
+        View All Projects
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Recent Blog Posts Section -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-gray-200 dark:border-gray-800">
+    <div class="mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">Latest Articles</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-400">
+        Insights and learnings from my data analytics journey
+      </p>
+    </div>
+
+    {
+      recentPosts.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {recentPosts.map((post) => (
+            <BlogCard
+              title={post.data.title}
+              description={post.data.description}
+              pubDate={post.data.pubDate}
+              slug={post.slug}
+              category={post.data.category}
+              readingTime={`${Math.ceil(post.body.length / 200)} min read`}
+            />
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-12">
+          <p class="text-gray-600 dark:text-gray-400 mb-4">Blog posts coming soon...</p>
+          <a href="/blog" class="text-blue-600 dark:text-cyan-400 hover:underline font-semibold">
+            View Blog →
+          </a>
+        </div>
+      )
+    }
+
+    <div class="text-center">
+      <a
+        href="/blog"
+        class="inline-flex items-center gap-2 px-8 py-4 rounded-lg border-2 border-blue-600 dark:border-cyan-500 text-blue-600 dark:text-cyan-400 font-semibold hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
+      >
+        Read All Articles
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="relative bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-900 dark:to-cyan-800 text-white mt-20 overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-pattern"></div>
+    </div>
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-6">Let's Work Together</h2>
+      <p class="text-xl text-blue-100 dark:text-blue-200 mb-8 max-w-2xl mx-auto">
+        Have a project in mind? Looking for insights from your data? Let's connect and explore possibilities.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/resume"
+          class="px-8 py-4 rounded-lg bg-white text-blue-600 font-semibold hover:bg-gray-100 transition-colors"
+        >
+          View Resume
+        </a>
+        <a
+          href="mailto:ravichandu@example.com"
+          class="px-8 py-4 rounded-lg border-2 border-white text-white font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+        >
+          Send Email
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
