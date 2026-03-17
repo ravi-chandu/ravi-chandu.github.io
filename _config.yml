@@ -3,6 +3,7 @@ author: "Ravi Chandu"
 description: "Ravi 😍"
 permalink: /:title/
 lang: "en"
+encoding: "utf-8"
 excerpt_separator: "\n\n\n"
 
 
@@ -18,9 +19,9 @@ show_social: true
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md"}
-  - {file: "Sql.md", Title: "SQL"}
-  - {file: "game.md", Title: "PBI Game"}
-  - {file: "blog.md", Title: "blog"}
+  - {file: "Sql.md", title: "SQL"}
+  - {file: "game.md", title: "PBI Game"}
+  - {file: "blog.md", title: "blog"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto: 92777166+ravi-chandu@users.noreply.github.com"}

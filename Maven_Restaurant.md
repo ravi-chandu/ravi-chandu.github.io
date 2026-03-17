@@ -1,6 +1,6 @@
---
+---
 title: "Maven Restaurant Challenge"
-permalink: "/Maven Restaurant Challenge/"
+permalink: "/Maven-Restaurant-Challenge/"
 layout: page
 ---
 

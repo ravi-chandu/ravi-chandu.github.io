@@ -1,3 +1,8 @@
+---
+title: "Data Analysis for a Restaurant Menu"
+layout: post
+---
+
 # Data analysis for a restaurant menu
 
 `Data analysis for a restaurant menu` - `Upwork - Project`

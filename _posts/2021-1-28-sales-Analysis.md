@@ -1,4 +1,8 @@
 
+---
+title: "Sales Analysis"
+layout: post
+---
 
 # AtliQ - Sales Insights Data Analysis - Power BI
 

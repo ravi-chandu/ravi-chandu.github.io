@@ -1,3 +1,8 @@
+---
+title: "SQL Joins Power BI"
+layout: post
+---
+
 # SQL-Joins-PowerBI
 
 [`Github Repo`](https://github.com/ravi-chandu/SQL-Joins-PowerBI)<br>

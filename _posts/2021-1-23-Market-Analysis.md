@@ -1,3 +1,8 @@
+---
+title: "Market Analysis"
+layout: post
+---
+
 # Market Analysis Report for National Clothing Chain
 `Udacity Project`
 

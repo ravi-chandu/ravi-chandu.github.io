@@ -1,4 +1,8 @@
 
+---
+title: "Maven Restaurant"
+layout: post
+---
 
 # Maveen-resturant
 *Maven Restaurant Challenge(Maven Analytics)*

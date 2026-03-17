@@ -1,3 +1,8 @@
+---
+title: "SQL"
+layout: page
+---
+
 # SQL
 *Breifly I will explain some sql functions*
 
